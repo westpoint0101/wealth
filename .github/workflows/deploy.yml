@@ -34,7 +34,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          REACT_APP_DECART_API_KEY: ${{ secrets.DECART_API_KEY }}
+          VITE_DECART_API_KEY: ${{ secrets.DECART_API_KEY }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
